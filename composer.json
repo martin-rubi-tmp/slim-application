@@ -1,0 +1,39 @@
+{
+    "name": "martin-rubi-tmp/slim-application",
+    "description": "An example of an integration of youbim-technical-test endpoints with a Slim application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Rubi",
+            "email": "martinrubi@gmail.com",
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "martin-rubi-tmp/youbim-technical-test": "0.0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0"
+    },
+    "repositories": {
+        "martin-rubi-tmp/youbim-technical-test": {
+            "type": "vcs",
+            "url": "https://github.com/martin-rubi-tmp/youbim-technical-test"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "./vendor/bin/phpunit tests/ --bootstrap vendor/autoload.php"
+    }
+}
