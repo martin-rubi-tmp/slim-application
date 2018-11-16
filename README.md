@@ -9,7 +9,7 @@ An example of an integration of youbim-technical-test endpoints with a Slim appl
 Clone the repository
 
 ```
-git clone git@github.com:martin-rubi-tmp/slim-application.git
+git clone https://github.com/martin-rubi-tmp/slim-application.git
 ```
 
 Install dependencies
